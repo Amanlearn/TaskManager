@@ -6,7 +6,14 @@ import javafx.concurrent.Task;
 import java.util.List;
 
 public interface ITaskService {
-    public List<TaskDTO> getAll();
-    public TaskDTO add(TaskDTO task);
-    public TaskDTO getTaskById(long id);
+    List<TaskDTO> getAll();
+
+    TaskDTO add(TaskDTO task);
+
+    TaskDTO getTaskById(long id);
+
+    TaskDTO update(TaskDTO taskDTO);
+
+    String delete(long id);
+
 }
